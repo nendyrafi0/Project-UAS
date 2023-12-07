@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: white;
+    height: 100vh;
+}
+
+header {
+    padding: 1rem 0 1rem;
+    text-align: center;
+}
+
+header img {
+    max-width: 250px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-inline: 4px;
+    padding: 4px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0px 0px 4px black;
+}
+
+nav li:hover {
+    background-image: linear-gradient(to right, #ff3131, #ff914d);
+}
+
+.welcome-text {
+    margin: 5vh auto;
+    text-align: center;
+    background-image: linear-gradient(to right, #ff3131, #ff914d);
+    padding-block: 20px;
+    margin-inline: 6rem;
+    border-radius: 20px;
+}
+
+.welcome-text h1 {
+    max-width: 700px;
+    display: block;
+    margin: auto;
+    font-size: 40px;
+    text-shadow: 4px 4px 0 black;
+    padding-bottom: 2rem;
+}
+
+.welcome-text .back-link {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.welcome-text a {
+    transition: 0.2s;
+}
+.welcome-text .back-link:hover {
+    filter: brightness(0.7);
+    border-radius: 20px;
+}
+
+footer {
+    background-image: linear-gradient(to right, #ff3131, #ff914d);
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 4px rgb(0, 0, 0);
+    text-align: center;
+    padding-block: 10px;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px 0px 12px inset rgb(41, 41, 41);
+    position: fixed;
+}
+
+@media screen and (max-width: 768px){
+    .container {
+        flex-direction: column;
+        padding-inline: 1.5rem;
+    }
+
+    .about-item {
+        flex-direction: column;
+    }
+
+    .logo {
+        display: block;
+        margin: auto;
+    }
+
+    form input {
+        width: 98%;
+    }    
+}

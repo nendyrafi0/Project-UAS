@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+/* ga banyak diubah
+cuma disesuaikan aja sama fungsinnya, jadi
+semisal ada css yang aneh atau ga kepake ya begitulah */
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: white;
+}
+
+/* Header */
+header {
+    padding: 1rem 0 1rem;
+    text-align: center;
+}
+
+header img {
+    max-width: 250px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-inline: 4px;
+    padding: 4px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0px 0px 4px black;
+}
+
+nav li:hover {
+    background-image: linear-gradient(to right, #ff3131, #ff914d);
+}
+/* header */
+
+/* content */
+/* home */
+#home {
+    padding-bottom: 2rem;
+}
+
+section:not(#home) {
+    padding: 2rem;
+}
+
+.welcome-text {
+    text-align: center;
+    background-image: linear-gradient(to right, #ff3131, #ff914d);
+    padding-block: 0.01% 20px;
+}
+
+.welcome-text p {
+    max-width: 700px;
+    display: block;
+    margin: auto;
+}
+
+.container {
+    padding-inline: 4rem;
+    margin-top: -4rem;
+}
+/* home */
+
+/* article */
+.news-item .titlenews, #news .all-news {
+    text-shadow: 0px 0px 6px black;
+    text-shadow: 0px 0px 8px inset black;
+}
+
+.news-item {
+    background-image: linear-gradient(to right, #ff3131, #ff914d);
+    margin-bottom: 4rem;
+    padding-bottom: 3rem;
+    border-radius: 15px;
+    color: black;
+    overflow: hidden;
+    box-shadow: 0px 0px 12px inset rgb(41, 41, 41);
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+}
+
+.news-item h2,
+.news-item p,
+.news-item .linknews {
+    padding-inline: 1.5rem;
+}
+
+.news-item .titlenews {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.news-item p {
+    padding-bottom: 1rem;
+}
+
+.news-item .linknews {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+}
+
+#news .all-news {
+    background-image: linear-gradient(to right, #ff3131, #ff914d);
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding-block: 1rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px inset rgb(41, 41, 41);
+    display: block;  
+    text-shadow: 0px 0px 4px black;
+}
+
+.news-item .titlenews:hover  {
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 3px white;
+}
+
+.news-item a {
+    transition: 0.2s;
+}
+.news-item .linknews:hover {
+    filter: brightness(0.7);
+    border-radius: 20px;
+}
+/* article */
+
+/* footer */
+footer {
+    background-image: linear-gradient(to right, #ff3131, #ff914d);
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 4px rgb(0, 0, 0);
+    text-align: center;
+    padding-block: 10px;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px 0px 12px inset rgb(41, 41, 41);
+}
+/* footer */
+
+/* media query */
+
+@media screen and (max-width: 768px){
+    .container {
+        flex-direction: column;
+        padding-inline: 1.5rem;
+    }
+
+    .about-item {
+        flex-direction: column;
+    }
+
+    .logo {
+        display: block;
+        margin: auto;
+    }
+
+    form input {
+        width: 98%;
+    }  
+    
+    section:not(#home) {
+        padding-inline: 1rem;
+    }
+
+    .welcome-text p {
+        padding-inline: 5px;
+    }
+}
