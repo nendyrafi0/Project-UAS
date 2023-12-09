@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 *::-webkit-scrollbar{
     display: none;
 }
@@ -57,7 +61,7 @@ nav li:hover {
 /* home */
 
 section {
-    padding-inline: 6rem;
+    padding-inline: 10rem;
     padding-block: 2rem;
 }
 /* home */
@@ -171,7 +175,7 @@ section {
 }
 
 .input-comments form label input::placeholder, .input-comments form label textarea::placeholder {
-    color: rgb(172, 172, 172)
+    color: #ff914d;
 }
 
 .input-comments form label textarea {
@@ -188,6 +192,7 @@ section {
     padding: 10px 2rem;
     font-size: 1rem;
     margin-inline: 2rem;
+    transition: .3s;
 }
 
 .input-comments button:hover {
@@ -208,6 +213,7 @@ section {
     border: 2px solid #af1b1b;
     padding: 0.5rem 1rem 1.5rem;
     border-radius: 15px;
+    margin-bottom: 1rem;
 }
 
 .comment-card small {
