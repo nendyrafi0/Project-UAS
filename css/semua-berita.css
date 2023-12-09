@@ -77,7 +77,7 @@ section:not(#home) {
 }
 
 .container {
-    padding-inline: 4rem;
+    padding-inline: 10rem;
     margin-top: -4rem;
 }
 /* home */
